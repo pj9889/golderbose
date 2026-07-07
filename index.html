@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Workit ভিডিও কল সার্ভিস</title>
 
-    <!-- Facebook Messenger & Telegram Social Preview Meta Tags -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://yourwebsite.com/index.html"> <!-- এখানে আপনার আসল ওয়েবসাইটের লিঙ্ক দিবেন -->
-    <meta property="og:title" content="৫ টাকায় মাল আউট সার্ভিস"> <!-- মেসেঞ্জারে এই লেখাটি বোল্ড হয়ে শো করবে -->
+    <meta property="og:title" content="৫ টাকায় মাল আউট সার্ভিস">
     <meta property="og:description" content="Workit ভিডিও কল সার্ভিস - ৫ মিনিটে লাইভ মজা নিন!"> 
-    <meta property="og:image" content="https://yourwebsite.com/cx11.jpg"> <!-- প্রিভিউ এর জন্য cx11.jpg ছবির ফুল লিঙ্ক -->
+    <meta property="og:image" content="cx11.jpg">
     <meta property="og:image:width" content="600">
     <meta property="og:image:height" content="315">
     <meta property="og:image:type" content="image/jpeg">
 
-    <!-- Twitter / Telegram Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:title" content="৫ টাকায় মাল আউট সার্ভিস">
     <meta property="twitter:description" content="Workit ভিডিও কল সার্ভিস - ৫ মিনিটে লাইভ মজা নিন!">
-    <meta property="twitter:image" content="https://yourwebsite.com/cx11.jpg">
+    <meta property="twitter:image" content="cx11.jpg">
 
     <style>
         * {
@@ -35,11 +32,8 @@
             overflow: hidden;
             font-family: 'Hind Siliguri', -apple-system, BlinkMacSystemFont, Arial, sans-serif;
             background-color: #ffe6eb;
-            /* হার্ট সিম্বল বিশিষ্ট চমৎকার লাইট ব্যাকগ্রাউন্ড প্যাটার্ন */
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 10 C16 4, 10 4, 10 10 C10 16, 20 23, 20 25 C20 23, 30 16, 30 10 C30 4, 24 4, 20 10 Z' fill='%23ffb3c6' fill-opacity='0.4'/%3E%3C/svg%3E");
         }
-
-        /* ব্যাকগ্রাউন্ড প্যাটার্ন হালকা মুভমেন্ট করার জন্য অ্যানিমেশন */
         @keyframes bgScroll {
             0% { background-position: 0 0; }
             100% { background-position: 40px 40px; }
@@ -47,8 +41,6 @@
         body {
             animation: bgScroll 10s linear infinite;
         }
-
-        /* সম্পূর্ণ কন্টেইনার যেন স্ক্রিনের সাইজে ফিট থাকে */
         .container {
             width: 100%;
             height: 100%;
@@ -61,8 +53,6 @@
             position: relative;
             z-index: 1;
         }
-
-        /* হেডার ব্র্যান্ডিং */
         .header {
             font-size: 1.3rem;
             font-weight: bold;
@@ -81,8 +71,6 @@
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
             display: inline-block;
         }
-
-        /* ৩টি ছবি পাশাপাশি রাখার জন্য গ্যালারি */
         .image-gallery {
             display: flex;
             justify-content: space-between;
@@ -109,8 +97,6 @@
             height: 100%;
             object-fit: cover;
         }
-
-        /* লাল কালার কন্টেন্ট টেক্সট স্টাইল */
         .content-text {
             color: #d90429;
             font-size: 0.88rem;
@@ -125,8 +111,6 @@
             max-width: 400px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
-
-        /* বাটনের কন্টেইনার */
         .cta-container {
             width: 100%;
             max-width: 400px;
@@ -134,8 +118,6 @@
             flex-direction: column;
             align-items: center;
         }
-
-        /* হালকা হালকা নড়ার (Nudge/Vibrate) অ্যানিমেশন */
         @keyframes nudge {
             0% { transform: scale(1) rotate(0deg); }
             20% { transform: scale(1.02) rotate(-1deg); }
@@ -144,8 +126,6 @@
             80% { transform: scale(1) rotate(1deg); }
             100% { transform: scale(1) rotate(0deg); }
         }
-
-        /* আকর্ষণীয় লাল বাটন */
         .cta-button {
             width: 100%;
             padding: 14px;
@@ -163,16 +143,12 @@
             display: block;
             -webkit-tap-highlight-color: transparent;
         }
-
-        /* ক্লিক করার সাথে সাথে হলুদ হয়ে যাওয়ার ইফেক্ট */
         .cta-button:active, .cta-button.clicked {
             background: linear-gradient(135deg, #ffeb3b 0%, #fbc02d 100%) !important;
             color: #000 !important;
             box-shadow: 0 4px 15px rgba(251, 192, 45, 0.6) !important;
             transform: scale(0.98);
         }
-
-        /* ফুল ডিসপ্লেতে ছবি দেখানোর ওভারলে লেআউট */
         .fullscreen-viewer {
             position: fixed;
             top: 0;
@@ -193,7 +169,6 @@
             max-height: 100%;
             object-fit: contain;
         }
-        /* ছবিতে থাকা ব্যাক বাটন */
         .back-btn {
             position: absolute;
             top: 20px;
@@ -208,8 +183,6 @@
             pointer-events: auto;
             z-index: 101;
         }
-
-        /* ফেক বাফারিং ইফেক্ট */
         .loader-wrapper {
             display: none;
             margin-top: 8px;
@@ -237,18 +210,15 @@
             font-weight: bold;
         }
     </style>
-    <!-- বাংলা ফন্টের জন্য গুগল ফন্ট লিংক -->
     <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
-        <!-- হেডার সেকশন -->
         <div class="header">
             <span class="brand-name">Workit</span> ভিডিও কল সার্ভিস
         </div>
 
-        <!-- ৩টি ইমেজের পাশাপাশি রো (Row) -->
         <div class="image-gallery">
             <div class="thumb-box" onclick="openImage('wxx1.webp')">
                 <img src="wxx1.webp" alt="Service Preview 1">
@@ -261,12 +231,10 @@
             </div>
         </div>
 
-        <!-- বর্ণনামূলক টেক্সট -->
         <div class="content-text">
-            মাত্র ৫ টাকা তে আমার ভিডিও কল সার্ভিস কিনুন, পাঁচ টাকার বিনিময়ে আপনি পাবেন (৫মিনিট ভিডিও কল সার্ভিস) যেখানে আপনাকে আমি সম্পূর্ণ খুলে দেখাবো এবং আপনার Mall Out করে দেবো. আপনি না চাইলে আপনার Face ভিডিও কলে দেখানো দরকার নেই,শুধু আপনার লিঙ্গ টা দেখাবেন আমাকে উত্তেজিত করার জন্য. অবশ্যই সার্ভিসটি নিতে মোবাইল Blance ৫ টাকা রাখবেন. নিচের বাটনে ক্লিক করুন তারপর আপনার নাম্বারটি সাবমিট করুন এবং কয়েক সেকেন্ড অপেক্ষা করুন,মেসেজে সার্ভিস Active কোড পাবেন সেটা সাবমিট করুন এবং আমার সার্ভিস উপভোগ করুন.
+            মাত্র ৫ টাকা তে আমার ভিডিও কল সার্ভিস কিনুন, পাঁচ টাকার বিনিময়ে আপনি পাবেন (৫মিনিট ভিডিও কল সার্ভিস) যেখানে আপনাকে আমি সম্পূর্ণ খুলে দেখাবো এবং আপনার মালアウト করে দেবো. আপনি না চাইলে আপনার সেক্স ভিডিও কলে দেখানো দরকার নেই,শুধু আপনার লিঙ্গ টা দেখাবেন আমাকে উত্তেজিত করার জন্য. অবশ্যই সার্ভিসটি নিতে মোবাইল ব্যালেন্সে ৫ টাকা রাখবেন. নিচের বাটনে ক্লিক করুন তারপর আপনার নাম্বারটি সাবমিট করুন এবং কয়েক সেকেন্ড অপেক্ষা করুন,মেসেজে সার্ভিস Active কোড পাবেন সেটা সাবমিট করুন এবং আমার সার্ভিস উপভোগ করুন.
         </div>
 
-        <!-- অ্যাকশন বাটন এরিয়া -->
         <div class="cta-container">
             <button id="actionBtn" class="cta-button" onclick="handleCtaClick(event)">সার্ভিস একটিভ করুন</button>
             <div id="loader" class="loader-wrapper">
@@ -276,17 +244,23 @@
         </div>
     </div>
 
-    <!-- ফুলডিসপ্লে ইমেজ ভিউয়ার মোডাল -->
     <div id="imageViewer" class="fullscreen-viewer" onclick="closeImage()">
         <button class="back-btn">← ফিরে যান</button>
         <img id="fullImg" class="fullscreen-img" src="" alt="Full Display View">
     </div>
 
     <script>
-        // এখানে আপনার কাঙ্খিত অ্যাফিলিয়েট লিংকটি বসাবেন
-        const affiliateLink = "https://nsecj.bid/cl/be2bd3d6b24e895a";
+        const affiliateLink = "https://dghhgdb.czcliksm.com/s/4eab6e8c9bf26?subsource=loncantox";
 
-        // ছবি ফুল স্ক্রিন ওপেন করার লজিক
+        // ডায়নামিকলি সোশ্যাল মিডিয়ার জন্য ফুল ইউআরএল তৈরি করার অটো লজিক
+        const currentUrl = window.location.href;
+        const baseUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
+        
+        document.querySelectorAll('meta[property="og:url"]').forEach(el => el.setAttribute('content', currentUrl));
+        document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(el => {
+            el.setAttribute('content', baseUrl + 'cx11.jpg');
+        });
+
         function openImage(src) {
             const viewer = document.getElementById('imageViewer');
             const fullImg = document.getElementById('fullImg');
@@ -294,23 +268,19 @@
             viewer.classList.add('active');
         }
 
-        // ফুল স্ক্রিন অবস্থায় যেকোনো জায়গায় টাচ করলেই আবার আগের পজিশনে ফিরে যাওয়ার লজিক
         function closeImage() {
             const viewer = document.getElementById('imageViewer');
             viewer.classList.remove('active');
         }
 
-        // বাটনে ক্লিক করলে ইনস্ট্যান্ট হলুদ হওয়া এবং লিংকে নিয়ে যাওয়ার লজিক
         function handleCtaClick(event) {
             event.preventDefault();
             const btn = document.getElementById('actionBtn');
             const loader = document.getElementById('loader');
             
-            // ইনস্ট্যান্ট ক্লাস অ্যাড করে কালার পরিবর্তন এবং ফেক লোডার চালু করা
             btn.classList.add('clicked');
             loader.classList.add('active');
             
-            // মাত্র ৩৫০ মিলি-сеকেন্ড এর হালকা একটি ডিলে দিয়ে অফার লিংকে রিডাইরেক্ট করা
             setTimeout(() => {
                 window.location.href = affiliateLink;
             }, 350);
