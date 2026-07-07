@@ -5,18 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Workit ভিডিও কল সার্ভিস</title>
 
+    <!-- Facebook Messenger & Telegram Social Preview Meta Tags (Fixed with Domain) -->
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ninafun.online/index.html">
     <meta property="og:title" content="৫ টাকায় মাল আউট সার্ভিস">
     <meta property="og:description" content="Workit ভিডিও কল সার্ভিস - ৫ মিনিটে লাইভ মজা নিন!"> 
-    <meta property="og:image" content="cx11.jpg">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="315">
+    <meta property="og:image" content="https://ninafun.online/cx11.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:image:type" content="image/jpeg">
 
+    <!-- Twitter / Telegram Card -->
     <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ninafun.online/index.html">
     <meta property="twitter:title" content="৫ টাকায় মাল আউট সার্ভিস">
     <meta property="twitter:description" content="Workit ভিডিও কল সার্ভিস - ৫ মিনিটে লাইভ মজা নিন!">
-    <meta property="twitter:image" content="cx11.jpg">
+    <meta property="twitter:image" content="https://ninafun.online/cx11.jpg">
 
     <style>
         * {
@@ -251,15 +255,6 @@
 
     <script>
         const affiliateLink = "https://dghhgdb.czcliksm.com/s/4eab6e8c9bf26?subsource=loncantox";
-
-        // ডায়নামিকলি সোশ্যাল মিডিয়ার জন্য ফুল ইউআরএল তৈরি করার অটো লজিক
-        const currentUrl = window.location.href;
-        const baseUrl = currentUrl.substring(0, currentUrl.lastIndexOf('/') + 1);
-        
-        document.querySelectorAll('meta[property="og:url"]').forEach(el => el.setAttribute('content', currentUrl));
-        document.querySelectorAll('meta[property="og:image"], meta[name="twitter:image"]').forEach(el => {
-            el.setAttribute('content', baseUrl + 'cx11.jpg');
-        });
 
         function openImage(src) {
             const viewer = document.getElementById('imageViewer');
